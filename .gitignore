@@ -31,3 +31,5 @@ _tmp
 dist
 www/
 .vscode
+devBuild
+entryBuild
