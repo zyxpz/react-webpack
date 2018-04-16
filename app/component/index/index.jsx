@@ -11,7 +11,7 @@ export default class Init extends Component {
           <div className="bottom">
               这是底部
           </div>
-          <a href="https://cschannel.alipay.com/newPortal.htm?scene=pc_elemespanzrx" target="_blank">dianji</a>
+          <a href="https://www.baidu.com" target="_blank">dianji</a>
       </div>
     )
   }
