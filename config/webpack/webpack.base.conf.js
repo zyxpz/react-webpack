@@ -7,7 +7,7 @@ let config = {
     'index': './entryBuild/index.js'
   },
   resolve: {
-    extensions: [".js", ".json", ".jsx", ".css", ".pcss"],
+    extensions: [".js", ".json", ".jsx", ".css", ".pcss", ".less"],
   }
 };
 module.exports = config;

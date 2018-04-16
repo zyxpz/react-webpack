@@ -43,7 +43,7 @@ let config = merge(baseWebpackConfig, {
       },
       {
         test: /\.less$/,
-        loader: ''
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   },
