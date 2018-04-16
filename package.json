@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run devNew && npm run dev",
     "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
     "entry": "node config/entry/entryBuild.js",
     "devBuildHtml": "node config/webpack/webpack.devBuildHtml.conf.js",

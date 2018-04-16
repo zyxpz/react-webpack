@@ -27,7 +27,7 @@ htmlCont = htmlCont.replace('</body>', `${scriptInsert}</body>`);
 
 entryBuild.map(data => {
   fs.writeFile(`${webpackFile.devDirectory}/${data.name}.html`,
-  htmlCont.replace('js/key.js', `js/${data.name}.js`).replace('<%= htmlWebpackPlugin.options.title %>', webpackComConf.titleFun(data.name, data.title)),
+  htmlCont.replace('js/key.js', `js/${data.name}.js`).replace('<%= htmlWbpackPlugin.options.title %>', webpackComConf.titleFun(data.name, data.title)),
   'utf-8',
   err => {
     if (err) {

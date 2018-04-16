@@ -1,10 +1,13 @@
 let titleFun = (chunkName, title) => {
   let titleDef = '网站';
+  let returnTitle;
   if (chunkName.indexOf('index') !== -1) {
-    return titleDef;
+    returnTitle = titleDef;
   } else {
-    return `${title}_${titleDef}`
+    returnTitle = `${title}_${titleDef}`
   }
+  console.log(title, chunkName, title);
+  return title;
 }
 
 module.exports = {

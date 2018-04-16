@@ -28,13 +28,13 @@ const entyrContent = data => `
   import Index from '../app/component/${data.path}'
   import Header from '../app/component/common/Header';
   import Footer from '../app/component/common/Footer';
-  render([<Header key="Header"/>,<Index key="Index"/>,<Footer key="Footer"/>],document.getElementById('app'))
+  render(<Index key="Index"/>,document.getElementById('app'))
 `
 
 entry.map(data => {
   fs.writeFile(`${entryBuildPath}/${data.name}.js`, entyrContent(data), 'utf8', err => {
     if (err) {
-      return console.log(ree);
+      return console.log(err);
     }
   })
 })
