@@ -6,7 +6,7 @@ let titleFun = (chunkName, title) => {
   } else {
     returnTitle = `${title}_${titleDef}`
   }
-  console.log(title, chunkName, title);
+
   return title;
 }
 
