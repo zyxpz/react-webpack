@@ -50,6 +50,7 @@ let config = merge(baseWebpackConfig, {
         test: /\.(js|jsx)$/,
         use: [
           'babel-loader',
+          'cache-loader',
         ],
         include: [
           path.resolve(__dirname, "../../app"),

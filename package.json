@@ -1,11 +1,11 @@
 {
   "name": "webpack-4",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run devNew && npm run dev",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --config config/webpack/webpack.dev.conf.js",
     "entry": "node config/entry/entryBuild.js",
     "devBuildHtml": "node config/webpack/webpack.devBuildHtml.conf.js",
     "devNew": "npm run entry && npm run devBuildHtml"
@@ -23,6 +23,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
+    "cache-loader": "^1.2.2",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "less": "^3.0.1",

@@ -33,3 +33,4 @@ www/
 .vscode
 devBuild
 entryBuild
+.cache-loader
