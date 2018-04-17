@@ -26,8 +26,10 @@ const entyrContent = data => `
   import React from 'react'
   import { render } from 'react-dom'
   import Index from '../app/component/${data.path}'
+  import Header from '../app/component/common/header'
+  import Footer from '../app/component/common/Footer'
 
-  render(<Index key="Index"/>,document.getElementById('app'))
+  render([<Header key="Header" />, <Index key="Index"/>, <Footer key="Footer" />],document.getElementById('app'))
 `
 
 entry.map(data => {
